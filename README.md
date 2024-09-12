@@ -10,6 +10,15 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Project Objective
+
+This project is meant to serve as a personal website. Part portfolio, part blog and any other fun features that I develop to showcase
+my capabilities in building quality UI's with backend interaction.
+
+The default template and configurations provided by `create-next-app` have been altered slightly for simplicity.
+
+Typescript will be used rather than Javascript.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
