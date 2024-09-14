@@ -9,6 +9,20 @@ The default template and configurations provided by `create-next-app` have been 
 
 Typescript will be used rather than Javascript.
 
+## File Structure Conventions
+
+📦app
+┣ 📂about
+┃ ┗ 📜page.tsx
+┣ 📂components
+┃ ┗ 📜header.tsx
+┣ 📜globals.css
+┣ 📜icon.png
+┣ 📜layout.tsx
+┗ 📜page.tsx
+
+`components` folders to be colocated within the route folder they correlate with
+
 ## Getting Started
 
 First, run the development server:
