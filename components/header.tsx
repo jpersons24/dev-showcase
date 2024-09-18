@@ -1,11 +1,6 @@
-import Image from "next/image";
-import logo from "@/public/logo.png";
 
-export default function Header() {
+export default function MainHeader() {
 	return (
-		<>
-			<Image src={logo} alt="A server surrounded by magic sparkles." />
-			<h1>Welcome to this NextJS Course!</h1>
-		</>
+		<header></header>
 	);
 }
