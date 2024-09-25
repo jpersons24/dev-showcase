@@ -11,36 +11,40 @@ Typescript will be used rather than Javascript.
 
 ## File Structure Conventions
 
-📦app
-┣ 📂about
-┃ ┗ 📜page.tsx
-┣ 📂components
-┃ ┗ 📜header.tsx
-┣ 📜globals.css
-┣ 📜icon.png
-┣ 📜layout.tsx
-┗ 📜page.tsx
+File structure will follow conventions provided by [Next.js App Router](https://nextjs.org/docs/getting-started/project-structure)
 
-`components` folders to be colocated within the route folder they correlate with
+## Dependencies
+
+| Dependency                  | Version | Description                                                          |
+| :-------------------------- | :------ | :------------------------------------------------------------------- |
+| next                        | 14.2.10 | React framework for server-side rendering and static site generation |
+| react                       | ^18     | Javascript library for UI building                                   |
+| react-dom                   | ^18     | Provides DOM-speicifc methods to render React components in browser  |
+| antd                        | ^5.21.1 | UI component library                                                 |
+| @ant-design/nextjs-registry | ^1.0.1  | Ant Design integration for Nest.js                                   |
+| typescript                  | ^5      | Strongly type superset of Javascript                                 |
+| @types/node                 | ^20     | Type definitions for Node                                            |
+| @types/react                | ^18     | Type definitions for React                                           |
+| @types/react-dom            | ^18     | Type definitions for React-DOM                                       |
+| eslint                      | ^8      | Code standards for Typescript                                        |
+| eslint-config-next          | 14.2.10 | ESLint configuration enforcing Next.js specific linting              |
+| prettier                    | ^3.3.3  | Code formatting                                                      |
 
 ## Getting Started
 
-First, run the development server:
+First, install project dependencies:
+
+```bash
+npm install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
--   [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
--   [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
 ## Deploy on Vercel
 
