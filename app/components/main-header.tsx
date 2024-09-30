@@ -14,7 +14,7 @@ const menuItems: MenuItem[] = [
 
 export default function MainHeader() {
   return (
-    <header id={'main-header'}>
+    <header id='main-header'>
       <div id='logo'>
         <Link href='/'>DevShowcase</Link>
       </div>

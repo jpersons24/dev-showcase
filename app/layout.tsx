@@ -16,12 +16,12 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body>
-        <ThemeProvider>
-          <AntdRegistry>
+        <AntdRegistry>
+          <ThemeProvider>
             <MainHeader />
             {children}
-          </AntdRegistry>
-        </ThemeProvider>
+          </ThemeProvider>
+        </AntdRegistry>
       </body>
     </html>
   );

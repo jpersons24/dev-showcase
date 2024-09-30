@@ -17,8 +17,7 @@ body {
 }
 
 main {
-  text-align: center;
-  margin: 5rem auto;
+  margin: 0 auto 3rem auto;
 }
 
 #main-header {
@@ -31,6 +30,8 @@ main {
   justify-content: space-between;
   align-items: center;
   gap: 8rem;
+  background-color: black;
+  border-bottom: 2px solid #ffffff76;
 }
 
 #main-header #logo a,
@@ -73,13 +74,15 @@ ul {
   width: 8rem;
   height: 8rem;
   object-fit: cover;
-  filter: drop-shadow(0 0 4px #f6c363);
+  filter: drop-shadow(0 0 4px #010101);
 }
 
 #logo {
   font-family: 'Inter', sans-serif;
   font-size: 1.5rem;
   border-radius: 8px;
+  border: #ffffff76 1px solid;
+  box-shadow: 5px 3px 5px #ffffff76;
   background: linear-gradient(
     120deg,
     #9c824a,
@@ -97,4 +100,16 @@ h1 {
   margin: 3rem auto;
   color: #ede9f3;
   font-family: 'Poppins', sans-serif;
+}
+
+p {
+  font-size: 2rem;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.home {
+  margin: 3rem auto;
+  width: 70%;
+  padding-bottom: 3rem;
 }

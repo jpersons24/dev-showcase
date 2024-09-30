@@ -42,5 +42,9 @@ export default function PartyTime() {
     frame();
   };
 
-  return <Button onClick={handleClick}>Party Time</Button>;
+  return (
+    <Button color={'primary'} onClick={handleClick}>
+      Party Time
+    </Button>
+  );
 }
