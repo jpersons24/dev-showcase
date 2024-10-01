@@ -22,6 +22,7 @@ export default function MainHeader() {
         style={{ width: '100%', background: 'none', border: 'none' }}
         mode='horizontal'
         items={menuItems}
+        id={'nav-menu'}
       />
       <PartyTime />
     </header>

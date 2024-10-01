@@ -17,7 +17,7 @@ body {
 }
 
 main {
-  margin: 0 auto 3rem auto;
+  margin: 0 auto;
 }
 
 #main-header {
@@ -34,10 +34,10 @@ main {
   border-bottom: 2px solid #ffffff76;
 }
 
-#main-header #logo a,
-#main-header #logo a:hover {
+#main-header #logo a {
   color: #e1e1d7;
   text-decoration: none;
+  font-size: 2rem;
 }
 
 ul {
@@ -46,35 +46,8 @@ ul {
   padding: 0;
 }
 
-#nav-link ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: row;
-}
-
-#nav-link ul li a {
-  color: #e4e4e4;
-  text-decoration: none;
-  margin: 1rem;
-  padding: 2px;
-}
-
-#nav-link ul li a:hover,
-#nav-link ul li a.active {
-  color: #e4e4e4;
-  border: 2px solid #e4e4e4;
-  border-radius: 5px;
-  background: #917e57;
-  margin: 1rem;
-  padding: 2px;
-}
-
-#nav-link ul li main img {
-  width: 8rem;
-  height: 8rem;
-  object-fit: cover;
-  filter: drop-shadow(0 0 4px #010101);
+#nav-menu a {
+  font-size: 1.5rem;
 }
 
 #logo {
@@ -102,7 +75,7 @@ h1 {
   font-family: 'Poppins', sans-serif;
 }
 
-p {
+.color-card-text {
   font-size: 2rem;
   margin: 0;
   font-family: 'Poppins', sans-serif;

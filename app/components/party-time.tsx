@@ -44,7 +44,7 @@ export default function PartyTime() {
 
   return (
     <Button color={'primary'} onClick={handleClick}>
-      Party Time
+      Click me for a good time!
     </Button>
   );
 }

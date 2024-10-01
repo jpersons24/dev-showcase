@@ -1,14 +1,7 @@
-import { Divider, Card } from 'antd';
+import { Divider } from 'antd';
 import Image from 'next/image';
-
-const cardRowStyle: React.CSSProperties = {
-  width: '100%',
-  display: 'flex',
-  flexDirection: 'row',
-  justifyContent: 'space-between',
-  gap: '1rem',
-  fontSize: '2rem',
-};
+import CardRow from '@/app/components/cards/card-row';
+import ColorCard from '@/app/components/cards/color-card';
 
 export default function Home() {
   return (
@@ -54,48 +47,43 @@ export default function Home() {
           marginBottom: '3rem',
         }}
       >
-        <div style={cardRowStyle}>
-          <Card style={{ width: '60%', backgroundColor: '#87D8BF' }}>
-            <p>
-              Writing something in here...and then see if it wraps around the
-              card if its too long
+        <CardRow>
+          <ColorCard width={'60%'} color={'#87D8BF'}>
+            <p className={'color-card-text'}>
+              Proficiency in front-end development with the latest Javascript,
+              Typescript, React, Next.js and more technologies and practices.
             </p>
-          </Card>
-          <Card style={{ width: '40%', backgroundColor: '#C4F458' }}>
-            <p>
-              Writing something in here...and then see if it wraps around the
-              card if its too long
+          </ColorCard>
+          <ColorCard width={'40%'} color={'#C4F458'}>
+            <p className={'color-card-text'}>
+              Cross functional collaboration skills.
             </p>
-          </Card>
-        </div>
-        <div style={cardRowStyle}>
-          <Card style={{ width: '35%', backgroundColor: '#F1998C' }}>
-            <p>
-              Writing something in here...and then see if it wraps around the
-              card if its too long
+          </ColorCard>
+        </CardRow>
+        <CardRow>
+          <ColorCard width={'35%'} color={'#F1998C'}>
+            <p className={'color-card-text'}>Extreme curiousity.</p>
+          </ColorCard>
+          <ColorCard width={'65%'} color={'#85CBDA'}>
+            <p className={'color-card-text'}>
+              Full-stack development experience with technologies like Node.js,
+              Express, Golang and MySQL.
             </p>
-          </Card>
-          <Card style={{ width: '65%', backgroundColor: '#85CBDA' }}>
-            <p>
-              Writing something in here...and then see if it wraps around the
-              card if its too long
+          </ColorCard>
+        </CardRow>
+        <CardRow>
+          <ColorCard width={'45%'} color={'#9BB6EC'}>
+            <p className={'color-card-text'}>
+              Headstrong approach to problem solving...anything is possible!
             </p>
-          </Card>
-        </div>
-        <div style={cardRowStyle}>
-          <Card style={{ width: '45%', backgroundColor: '#9BB6EC' }}>
-            <p>
-              Writing something in here...and then see if it wraps around the
-              card if its too long
+          </ColorCard>
+          <ColorCard width={'55%'} color={'#B196D0'}>
+            <p className={'color-card-text'}>
+              Motivation to learn and grow as a team member and individual to
+              contribute to successful, continuously improving environment.
             </p>
-          </Card>
-          <Card style={{ width: '55%', backgroundColor: '#B196D0' }}>
-            <p>
-              Writing something in here...and then see if it wraps around the
-              card if its too long
-            </p>
-          </Card>
-        </div>
+          </ColorCard>
+        </CardRow>
       </div>
     </main>
   );
