@@ -23,12 +23,10 @@ File structure will follow conventions provided by [Next.js App Router](https://
 | antd                        | ^5.21.1 | UI component library                                                 |
 | @ant-design/nextjs-registry | ^1.0.1  | Ant Design integration for Nest.js                                   |
 | typescript                  | ^5      | Strongly type superset of Javascript                                 |
-| @types/node                 | ^20     | Type definitions for Node                                            |
-| @types/react                | ^18     | Type definitions for React                                           |
-| @types/react-dom            | ^18     | Type definitions for React-DOM                                       |
 | eslint                      | ^8      | Code standards for Typescript                                        |
 | eslint-config-next          | 14.2.10 | ESLint configuration enforcing Next.js specific linting              |
 | prettier                    | ^3.3.3  | Code formatting                                                      |
+| canvas-confetti             | ^1.9.3  | library for confetti animation                                       |
 
 ## Getting Started
 
