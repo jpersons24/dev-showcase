@@ -1,0 +1,8 @@
+.grid {
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(20, 5%);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
+  font-size: 2rem;
+}

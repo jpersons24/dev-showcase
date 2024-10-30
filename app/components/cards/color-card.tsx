@@ -1,13 +1,27 @@
+import React from 'react';
 import { Card } from 'antd';
 
-export default function ColorCard({
-  color,
-  width,
-  children,
-}: {
+export interface ColorCardProps {
+  columnStart: number;
+  columnEnd: number;
+  row: number;
   color: string;
-  width: string;
-  children: React.ReactNode;
-}) {
-  return <Card style={{ width, backgroundColor: color }}>{children}</Card>;
+  children?: React.ReactNode;
+}
+
+export default function ColorCard({
+  columnStart,
+  columnEnd,
+  row,
+  color,
+  children,
+}: ColorCardProps) {
+  const style = {
+    gridColumnStart: columnStart,
+    gridColumnEnd: columnEnd,
+    gridRow: row,
+    backgroundColor: color,
+  };
+
+  return <Card style={style}>{children}</Card>;
 }

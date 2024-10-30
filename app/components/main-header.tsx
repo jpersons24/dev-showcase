@@ -1,6 +1,5 @@
 import { Menu } from 'antd';
 import { MenuItemType } from 'antd/es/menu/interface';
-import Link from 'next/link';
 import NavLink from './nav-link';
 import PartyTime from './party-time';
 
@@ -15,9 +14,6 @@ const menuItems: MenuItem[] = [
 export default function MainHeader() {
   return (
     <header id='main-header'>
-      <div id='logo'>
-        <Link href='/'>DevShowcase</Link>
-      </div>
       <Menu
         style={{ width: '100%', background: 'none', border: 'none' }}
         mode='horizontal'
