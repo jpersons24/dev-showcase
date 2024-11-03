@@ -7,7 +7,7 @@ export const colorCardData: ColorCardProps[] = [
     row: 1,
     color: '#87D8BF',
     children: (
-      <p className={'color-card-text'}>
+      <p>
         Proficiency in front-end development with the latest Javascript,
         Typescript, React, Next.js and more technologies and practices.
       </p>
@@ -18,18 +18,14 @@ export const colorCardData: ColorCardProps[] = [
     columnEnd: 21,
     row: 1,
     color: '#C4F458',
-    children: (
-      <p className={'color-card-text'}>
-        Cross functional collaboration skills.
-      </p>
-    ),
+    children: <p>Cross functional collaboration skills.</p>,
   },
   {
     columnStart: 1,
     columnEnd: 7,
     row: 2,
     color: '#F1998C',
-    children: <p className={'color-card-text'}>Extreme curiousity.</p>,
+    children: <p>Extreme curiousity.</p>,
   },
   {
     columnStart: 7,
@@ -37,7 +33,7 @@ export const colorCardData: ColorCardProps[] = [
     row: 2,
     color: '#85CBDA',
     children: (
-      <p className={'color-card-text'}>
+      <p>
         Full-stack development experience with technologies like Node.js,
         Express, Golang and MySQL.
       </p>
@@ -49,9 +45,7 @@ export const colorCardData: ColorCardProps[] = [
     row: 3,
     color: '#9BB6EC',
     children: (
-      <p className={'color-card-text'}>
-        Headstrong approach to problem solving...anything is possible!
-      </p>
+      <p>Headstrong approach to problem solving...anything is possible!</p>
     ),
   },
   {
@@ -60,7 +54,7 @@ export const colorCardData: ColorCardProps[] = [
     row: 3,
     color: '#B196D0',
     children: (
-      <p className={'color-card-text'}>
+      <p>
         Motivation to learn and grow as a team member and individual to
         contribute to successful, continuously improving environment.
       </p>

@@ -13,6 +13,8 @@ export default function ThemeProvider({
         token: {
           colorPrimaryHover: '#EF0107',
           colorPrimaryActive: '#DB0007',
+          fontFamily:
+            "'M PLUS 1 Code', 'Source Code Pro', monospace, sans-serif",
         },
         algorithm: theme.darkAlgorithm,
         components: {
