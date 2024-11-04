@@ -1,12 +1,7 @@
 import React from 'react';
-import FormulaOnePage from './page';
 
-function FormulaOneLayout() {
-  return (
-    <main>
-      <FormulaOnePage />
-    </main>
-  );
+function FormulaOneLayout({ children }: { children: React.ReactNode }) {
+  return <main>{children}</main>;
 }
 
 export default FormulaOneLayout;

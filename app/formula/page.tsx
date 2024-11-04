@@ -1,39 +1,25 @@
-import React from 'react';
-import { getDrivers, Driver } from '@/app/actions';
-import { Table } from 'antd';
-import type { TableProps } from 'antd';
+import { Menu } from 'antd';
+import { MenuItemType } from 'antd/es/menu/interface';
+import Link from 'next/link';
 
-async function FormulaOnePage() {
-  const drivers = await getDrivers();
+type MenuItem = MenuItemType;
 
-  const columns: TableProps<Driver>['columns'] = [
-    {
-      title: 'Driver',
-      dataIndex: 'full_name',
-      key: 'driver',
-    },
-    {
-      title: '#',
-      dataIndex: 'driver_number',
-      key: 'number',
-    },
-    {
-      title: 'Country',
-      dataIndex: 'country_code',
-      key: 'country',
-    },
-    {
-      title: 'Team',
-      dataIndex: 'team_name',
-      key: 'team',
-    },
-  ];
+const menuItems: MenuItem[] = [
+  { key: 'drivers', label: <Link href='formula/drivers'>Drivers</Link> },
+  { key: 'meetings', label: 'Races' },
+];
+
+export default function FormulaOnePage() {
   return (
     <div>
-      <h1>Current Formula 1 Drivers</h1>
-      <Table columns={columns} dataSource={drivers} />
+      <Menu
+        style={{
+          width: '15%',
+          border: `none`,
+          borderRadius: '10px',
+        }}
+        items={menuItems}
+      />
     </div>
   );
 }
-
-export default FormulaOnePage;

@@ -1,17 +1,29 @@
-import { Menu } from 'antd';
+'use client';
+
+import React, { useState } from 'react';
+
+import { Menu, MenuProps } from 'antd';
 import { MenuItemType } from 'antd/es/menu/interface';
-import NavLink from './nav-link';
+import { usePathname } from 'next/navigation';
+import Link from 'next/link';
 
 type MenuItem = MenuItemType;
 
 const menuItems: MenuItem[] = [
-  { key: 'about', label: <NavLink href='/about'>About Me</NavLink> },
-  { key: 'blog', label: <NavLink href='/blog'>Blog</NavLink> },
-  { key: 'showcase', label: <NavLink href='/showcase'>Showcase</NavLink> },
-  { key: 'formula1', label: <NavLink href='/formula'>Formula 1</NavLink> },
+  { key: 'about', label: <Link href='/about'>About Me</Link> },
+  { key: 'blog', label: <Link href='/blog'>Blog</Link> },
+  { key: 'showcase', label: <Link href='/showcase'>Showcase</Link> },
+  { key: 'formula', label: <Link href='/formula'>Formula 1</Link> },
 ];
 
 export default function MainHeader() {
+  const path = usePathname();
+  const [currentKey, setCurrentKey] = useState<string>(path.substring(1));
+
+  const onClick: MenuProps['onClick'] = (e) => {
+    setCurrentKey(e.key);
+  };
+
   return (
     <header id='main-header'>
       <Menu
@@ -19,6 +31,8 @@ export default function MainHeader() {
         mode='horizontal'
         items={menuItems}
         id={'nav-menu'}
+        onClick={onClick}
+        selectedKeys={[currentKey]}
       />
     </header>
   );
